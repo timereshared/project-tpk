@@ -1,0 +1,23 @@
+          R TPK ALGORITHM IN MAD
+          R FUNCTION F
+           INTERNAL FUNCTION(X)
+           ENTRY TO F.
+           FUNCTION RETURN SQRT.(.ABS.X) + 5 * X.P.3
+           END OF FUNCTION
+          R MAIN PROGRAM
+           INTEGER N,J
+           N = 11
+           DIMENSION NUM(11)
+           VECTOR VALUES FMT = $F9.4 *$
+           PRINT COMMENT $PLEASE ENTER 11 NUMBERS$
+           THROUGH INPUT,FOR J=0,1,J.GE.N
+INPUT      READ FORMAT FMT,NUM(J)
+           PRINT COMMENT $RESULTS ARE$
+           THROUGH CALC,FOR J=N-1,-1,J.L.0
+           RESULT = F.(NUM(J))
+           WHENEVER RESULT.G.400
+           PRINT COMMENT $TOO LARGE$
+           OTHERWISE
+           PRINT FORMAT FMT,RESULT
+CALC       END OF CONDITIONAL
+           END OF PROGRAM

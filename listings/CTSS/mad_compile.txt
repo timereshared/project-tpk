@@ -1,0 +1,62 @@
+s709 2.4.3 COMM tty0 (KSR-37) from 127.0.0.1
+
+MIT8C0: 1 USER AT 03/12/25 1811.0, MAX = 30
+READY.                                     
+      
+login guest
+W 1811.1
+Password
+ M1416     5 LOGGED IN  03/12/25 1811.1 FROM 700000
+ LAST LOGOUT WAS  03/12/25 1808.7 FROM 700000      
+ HOME FILE DIRECTORY IS M1416 GUEST          
+                                   
+THIS IS A RECONSTRUCTED CTSS SYSTEM.
+VERSION: 1.0.9                      
+BUILT: 02/13/25 1114.0
+                      
+ CTSS BEING USED IS: MIT8C0
+R .033+.000                
+
+mad tpk (list)
+W 1831.4
+LENGTH 00211.  TV SIZE 00007.  ENTRY 00040
+R .016+.016                               
+
+loadgo tpk
+W 1831.7
+EXECUTION.
+PLEASE ENTER 11 NUMBERS
+10.                    
+-1.
+1.
+2.
+3.
+4.
+4.3
+4.305
+4.303
+4.302
+4.301
+RESULTS ARE
+ 399.8863  
+TOO LARGE
+TOO LARGE
+TOO LARGE
+ 399.6086
+ 322.0000
+ 136.7320
+  41.4142
+   6.0000
+  -4.0000
+TOO LARGE
+  EXIT CALLED. PM MAY BE TAKEN.
+R .150+.016                    
+ 
+rquest print tpk bcd
+W 1836.0
+R .000+.000
+           
+logout
+W 1836.1
+ M1416     5 LOGGED OUT 03/12/25 1836.1 FROM 700000
+ TOTAL TIME USED =    .0 MIN.                      

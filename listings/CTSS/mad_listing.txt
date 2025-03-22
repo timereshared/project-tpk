@@ -1,0 +1,98 @@
+      M1416      GUEST          TPK         BCD FOR   M1416           5      031225      1836.5
+     MAD PROGRAM LISTING ... ... ...                 FILE     TPK   MAD            03/12/25    1831.4
+
+
+
+                 TPK ALGORITHM IN MAD                                                                   00010
+                 FUNCTION F                                                                             00020
+                 INTERNAL FUNCTION(X)                                                            *001   00030
+                 ENTRY TO F.                                                                     *002   00040
+                 FUNCTION RETURN SQRT.(.ABS.X) + 5 * X.P.3                                       *003   00050
+                 END OF FUNCTION                                                                 *004   00060
+                 MAIN PROGRAM                                                                           00070
+                 INTEGER N,J                                                                     *005   00080
+                 N = 11                                                                          *006   00090
+                 DIMENSION NUM(11)                                                               *007   00100
+                 VECTOR VALUES FMT = $F9.4 *$                                                    *008   00110
+                 PRINT COMMENT $PLEASE ENTER 11 NUMBERS$                                         *009   00120
+                 THROUGH INPUT,FOR J=0,1,J.GE.N                                                  *010   00130
+     INPUT       READ FORMAT FMT,NUM(J)                                                          *011   00140
+                 PRINT COMMENT $RESULTS ARE$                                                     *012   00150
+                 THROUGH CALC,FOR J=N-1,-1,J.L.0                                                 *013   00160
+                 RESULT = F.(NUM(J))                                                             *014   00170
+                 WHENEVER RESULT.G.400                                                           *015   00180
+                 PRINT COMMENT $TOO LARGE$                                                       *016   00190
+                 OTHERWISE                                                                       *017   00200
+                 PRINT FORMAT FMT,RESULT                                                         *018   00210
+     CALC        END OF CONDITIONAL                                                              *019   00220
+                 END OF PROGRAM                                                                  *020   00230
+MAD PROGRAM,TYPE NOV 1963      (ALL NUMBERS ARE OCTAL)
+
+TOTAL LOCATIONS   00211 TRANSFER VECTOR LENGTH  00007 PROGRAM BEGINS    00040
+
+VARIABLE STORAGE (A=ARRAY,C=COMMON,E=ERASABLE,DIGIT=MODE)
+     CALC   00010   4        INPUT  00010   4        N      00013   1        NUM    00027 A 0        RESULT 00030   0
+     FMT    00011 A 1        J      00012   1
+
+FUNCTION DICTIONARY
+     .01301 00000   0        EXIT   00001   0        .PCOMT 00002   0        .PRINT 00003   0        .READ  00004   0
+     .SETUP 00005   0        SQRT   00006   0        F      00007   0
+
+ABSOLUTE CONSTANTS
+00036 +000000000620     00031 +000000000000     00035 +000000000013     00034 +000000000005     00033 +000000000003
+00032 +000000000001     00037 +233000000000
+
+PROGRAM
+                INTERNAL FUNCTION(X)                                               001    00030
+00040 TSX +0 07400 4 00005    00041 TRA +0 02000 0 00104
+                ENTRY TO F.                                                        002    00040
+00042 TRA +0 02000 0 00045    00007 TTR +0 02100 0 00043    00043 SXA +0 63400 2 00067    00044 TSX +0 07400 2 00067
+                FUNCTION RETURN SQRT.(.ABS.X) + 5 * X.P.3                          003    00050
+00045 CLA +0 50000 0 00023    00046 LDQ +0 56000 0 00033    00047 TSX +0 07400 4 00000    00050 STO +0 60100 0 00102
+00051 CLA +0 50000 0 00034    00052 ORA -0 50100 0 00037    00053 FAD +0 30000 0 00037    00054 XCA +0 13100 0 00000
+00055 FMP +0 26000 0 00102    00056 STO +0 60100 0 00102    00057 CLA +0 50000 0 00023    00060 SSP +0 76000 0 00003
+00061 STO +0 60100 0 00103    00062 TSX +0 07400 4 00006    00063 TXH +3 00000 0 00103    00064 FAD +0 30000 0 00102
+00065 TRA +0 02000 0 00076
+                END OF FUNCTION                                                    004    00060
+00066 TSX +0 07400 4 00001    00067 TXH +3 00000 0 00000    00070 SXD -0 63400 1 00067    00071 SXA +0 63400 4 00076
+00072 CLA +0 50000 4 00001    00073 STA +0 62100 0 00045    00074 STA +0 62100 0 00057    00075 TRA +0 02000 2 00001
+00076 AXT +0 77400 4 00000    00077 LXA +0 53400 2 00067    00100 LXD -0 53400 1 00067    00101 TRA +0 02000 4 00001
+                INTEGER N,J                                                        005    00080
+                N = 11                                                             006    00090
+00104 CLA +0 50000 0 00035    00105 STO +0 60100 0 00013
+                DIMENSION NUM(11)                                                  007    00100
+                VECTOR VALUES FMT = $F9.4 *$                                       008    00110
+00011     +2 61133 0 46054
+                PRINT COMMENT $PLEASE ENTER 11 NUMBERS$                            009    00120
+00106 TSX +0 07400 4 00002    00107     +0 00000 0 00004    00110     -0 74325 2 16225    00111     -2 02545 6 32551
+00112     -2 00101 6 04564    00113     -0 42225 5 16260
+                THROUGH INPUT,FOR J=0,1,J.GE.N                                     010    00130
+00114 CLA +0 50000 0 00031    00115 STO +0 60100 0 00012    00116 TRA +0 02000 0 00122    00117 CLA +0 50000 0 00012
+00120 ADD +0 40000 0 00032    00121 STO +0 60100 0 00012    00122 CLA +0 50000 0 00012    00123 SUB +0 40200 0 00013
+00124 TZE +0 10000 0 00137    00125 TPL +0 12000 0 00137
+     INPUT      READ FORMAT FMT,NUM(J)                                             011    00140
+00126 TSX +0 07400 4 00004    00127 STR -1 00011 1 00207    00130 CLA +0 50000 0 00012    00131 SUB +0 40200 0 00132
+00132 TXH +3 00000 0 00027    00133 STA +0 62100 0 00134    00134 STR -1 00000 0 00000    00135 STR -1 00000 0 00000
+00136 TRA +0 02000 0 00117
+                PRINT COMMENT $RESULTS ARE$                                        012    00150
+00137 TSX +0 07400 4 00002    00140     +0 00000 0 00002    00141     -1 12562 6 44363    00142     -2 26021 5 12560
+                THROUGH CALC,FOR J=N-1,-1,J.L.0                                    013    00160
+00143 CLA +0 50000 0 00013    00144 SUB +0 40200 0 00032    00145 STO +0 60100 0 00012    00146 TRA +0 02000 0 00152
+00147 CLS +0 50200 0 00032    00150 ADD +0 40000 0 00012    00151 STO +0 60100 0 00012    00152 CLA +0 50000 0 00012
+00153 SUB +0 40200 0 00031    00154 TZE +0 10000 0 00156    00155 TMI -0 12000 0 00206
+                RESULT = F.(NUM(J))                                                014    00170
+00156 CLA +0 50000 0 00012    00157 SUB +0 40200 0 00160    00160 TXH +3 00000 0 00027    00161 STA +0 62100 0 00163
+00162 TSX +0 07400 4 00007    00163 TXH +3 00000 0 00000    00164 STO +0 60100 0 00030
+                WHENEVER RESULT.G.400                                              015    00180
+00165 CLA +0 50000 0 00036    00166 ORA -0 50100 0 00037    00167 FAD +0 30000 0 00037    00170 CHS +0 76000 0 00002
+00171 ADD +0 40000 0 00030    00172 TZE +0 10000 0 00201    00173 TMI -0 12000 0 00201
+                PRINT COMMENT $TOO LARGE$                                          016    00190
+00174 TSX +0 07400 4 00002    00175     +0 00000 0 00002    00176     -2 34646 6 04321    00177     -1 12725 6 06060
+                OTHERWISE                                                          017    00200
+00200 TRA +0 02000 0 00205
+                PRINT FORMAT FMT,RESULT                                            018    00210
+00201 TSX +0 07400 4 00003    00202 STR -1 00011 1 00207    00203 STR -1 00000 0 00030    00204 STR -1 00000 0 00000
+     CALC       END OF CONDITIONAL                                                 019    00220
+00205 TRA +0 02000 0 00147
+                END OF PROGRAM                                                     020    00230
+00206 TSX +0 07400 4 00001

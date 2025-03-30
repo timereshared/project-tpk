@@ -1,0 +1,105 @@
+      M1416      GUEST          TPK         BCD FOR   M1416           5      031725      1906.8
+     MAD PROGRAM LISTING ... ... ...                 FILE     TPK   MAD            03/17/25    1905.2
+
+
+
+                TPK ALGORITH IN FORTRAN II                                                           MTR00001
+                 INTERNAL FUNCTION FTPK.(QQ0002)=SQRT.(.ABS.(QQ0002))+5.0*QQ00                   *001MTR00002
+               1 02.P.3                                                                          *001MTR00003
+                MAIN PROGRAM                                                                         MTR00004
+                 DIMENSION A(11)                                                                 *002MTR00005
+                 N=11                                                                            *003MTR00006
+                 PRINT ONLINE FORMAT QQ0003                                                      *004MTR00007
+                 VECTOR VALUES QQ0003=$23HPLEASE ENTER 11 NUMBERS*$                              *005MTR00008
+                 READ FORMAT QQ0004,A(11)...A(1)                                                 *006MTR00009
+                 VECTOR VALUES QQ0004=$F9.4*$                                                    *007MTR00010
+                 PRINT ONLINE FORMAT QQ0005                                                      *008MTR00011
+                 VECTOR VALUES QQ0005=$11HRESULTS ARE*$                                          *009MTR00012
+                 THROUGH QQ0006, FOR J=1,1,J.G.N.AND.J.NE.1                                      *010MTR00013
+                 RESULT=FTPK.(A(J))                                                              *011MTR00014
+                 WHENEVER (RESULT-400.0).G.0, TRANSFER TO QQ0007                                 *012MTR00015
+                 TRANSFER TO QQ0008                                                              *013MTR00016
+     QQ0007      PRINT ONLINE FORMAT QQ0009                                                      *014MTR00017
+                 VECTOR VALUES QQ0009=$9HTOO LARGE*$                                             *015MTR00018
+                 TRANSFER TO QQ0006                                                              *016MTR00019
+     QQ0008      PRINT ONLINE FORMAT QQ0004,RESULT                                               *017MTR00020
+     QQ0006      CONTINUE                                                                        *018MTR00021
+                 TRANSFER TO QQ0001                                                              *019MTR00022
+                 INTEGER N,J                                                                     *020MTR00023
+     QQ0001      END OF PROGRAM                                                                  *021MTR00024
+MAD PROGRAM,TYPE NOV 1963      (ALL NUMBERS ARE OCTAL)
+
+TOTAL LOCATIONS   00205 TRANSFER VECTOR LENGTH  00006 PROGRAM BEGINS    00055
+
+VARIABLE STORAGE (A=ARRAY,C=COMMON,E=ERASABLE,DIGIT=MODE)
+     A      00027 A 0        QQ0001 00010   4        QQ0005 00042 A 1        QQ0007 00012   4        QQ0009 00044 A 1
+     J      00030   1        QQ0003 00036 A 1        QQ0006 00011   4        QQ0008 00013   4        RESULT 00045   0
+     N      00031   1        QQ0004 00037 A 1
+
+FUNCTION DICTIONARY
+     .01301 00000   0        EXIT   00001   0        .COMNT 00002   0        .READ  00003   0        .SETUP 00004   0
+     SQRT   00005   0        FTPK   00006   0
+
+ABSOLUTE CONSTANTS
+00046 +000000000000     00053 +211620000000     00051 +000000000013     00052 +203500000000     00050 +000000000003
+00047 +000000000001     00054 +233000000000
+
+STATEMENT DICTIONARY
+00010 TXL -300202000201       00011 TXL -300200000177       00012 TXL -300172000167       00013 TXL -300177000173
+
+PROGRAM
+                INTERNAL FUNCTION FTPK.(QQ0002)=SQRT.(.ABS.(QQ0002))+5.0*QQ00      001 MTR00002
+               102.P.3                                                             001 MTR00003
+00055 TSX +0 07400 4 00004    00056 TRA +0 02000 0 00113    00006 TTR +0 02100 0 00057    00057 SXA +0 63400 2 00076
+00060 TSX +0 07400 2 00076    00061 CLA +0 50000 0 00023    00062 LDQ +0 56000 0 00050    00063 TSX +0 07400 4 00000
+00064 XCA +0 13100 0 00000    00065 FMP +0 26000 0 00052    00066 STO +0 60100 0 00111    00067 CLA +0 50000 0 00023
+00070 SSP +0 76000 0 00003    00071 STO +0 60100 0 00112    00072 TSX +0 07400 4 00005    00073 TXH +3 00000 0 00112
+00074 FAD +0 30000 0 00111    00075 TRA +0 02000 0 00105    00076 TXH +3 00000 0 00000    00077 SXD -0 63400 1 00076
+00100 SXA +0 63400 4 00105    00101 CLA +0 50000 4 00001    00102 STA +0 62100 0 00061    00103 STA +0 62100 0 00067
+00104 TRA +0 02000 2 00001    00105 AXT +0 77400 4 00000    00106 LXA +0 53400 2 00076    00107 LXD -0 53400 1 00076
+00110 TRA +0 02000 4 00001
+                DIMENSION A(11)                                                    002 MTR00005
+                N=11                                                               003 MTR00006
+00113 CLA +0 50000 0 00051    00114 STO +0 60100 0 00031
+                PRINT ONLINE FORMAT QQ0003                                         004 MTR00007
+00115 TSX +0 07400 4 00002    00116 STR -1 00036 1 00203    00117 STR -1 00000 0 00000
+                VECTOR VALUES QQ0003=$23HPLEASE ENTER 11 NUMBERS*$                 005 MTR00008
+00032     -1 16254 6 06060    00033     -2 04564 4 42225    00034     -2 32551 6 00101    00035     +2 16225 6 02545
+00036     +0 20330 4 74325
+                READ FORMAT QQ0004,A(11)...A(1)                                    006 MTR00009
+00120 TSX +0 07400 4 00003    00121 STR -1 00037 1 00203    00122 STR -1 00026 0 00014    00123 STR -1 00000 0 00000
+                VECTOR VALUES QQ0004=$F9.4*$                                       007 MTR00010
+00037     +2 61133 0 45460
+                PRINT ONLINE FORMAT QQ0005                                         008 MTR00011
+00124 TSX +0 07400 4 00002    00125 STR -1 00042 1 00203    00126 STR -1 00000 0 00000
+                VECTOR VALUES QQ0005=$11HRESULTS ARE*$                             009 MTR00012
+00040     -1 12554 6 06060    00041     -2 44363 6 26021    00042     +0 10130 5 12562
+                THROUGH QQ0006, FOR J=1,1,J.G.N.AND.J.NE.1                         010 MTR00013
+00127 CLA +0 50000 0 00047    00130 STO +0 60100 0 00030    00131 TRA +0 02000 0 00135    00132 CLA +0 50000 0 00030
+00133 ADD +0 40000 0 00047    00134 STO +0 60100 0 00030    00135 CLA +0 50000 0 00030    00136 SUB +0 40200 0 00047
+00137 TZE +0 10000 0 00144    00140 CLA +0 50000 0 00030    00141 SUB +0 40200 0 00031    00142 TZE +0 10000 0 00144
+00143 TPL +0 12000 0 00200
+                RESULT=FTPK.(A(J))                                                 011 MTR00014
+00144 CLA +0 50000 0 00030    00145 SUB +0 40200 0 00146    00146 TXH +3 00000 0 00027    00147 STA +0 62100 0 00151
+00150 TSX +0 07400 4 00006    00151 TXH +3 00000 0 00000    00152 STO +0 60100 0 00045
+                WHENEVER (RESULT-400.0).G.0, TRANSFER TO QQ0007                    012 MTR00015
+00153 CLA +0 50000 0 00045    00154 FSB +0 30200 0 00053    00155 STO +0 60100 0 00202    00156 CLA +0 50000 0 00046
+00157 ORA -0 50100 0 00054    00160 FAD +0 30000 0 00054    00161 CHS +0 76000 0 00002    00162 ADD +0 40000 0 00202
+00163 TZE +0 10000 0 00166    00164 TMI -0 12000 0 00166    00165 TRA +0 02000 0 00012
+                TRANSFER TO QQ0008                                                 013 MTR00016
+00166 TRA +0 02000 0 00013
+     QQ0007     PRINT ONLINE FORMAT QQ0009                                         014 MTR00017
+00167 TSX +0 07400 4 00002    00170 STR -1 00044 1 00203    00171 STR -1 00000 0 00000
+                VECTOR VALUES QQ0009=$9HTOO LARGE*$                                015 MTR00018
+00043     -0 32151 2 72554    00044     +1 13063 4 64660
+                TRANSFER TO QQ0006                                                 016 MTR00019
+00172 TRA +0 02000 0 00011
+     QQ0008     PRINT ONLINE FORMAT QQ0004,RESULT                                  017 MTR00020
+00173 TSX +0 07400 4 00002    00174 STR -1 00037 1 00203    00175 STR -1 00000 0 00045    00176 STR -1 00000 0 00000
+     QQ0006     CONTINUE                                                           018 MTR00021
+00177 TRA +0 02000 0 00132
+                TRANSFER TO QQ0001                                                 019 MTR00022
+00200 TRA +0 02000 0 00010
+                INTEGER N,J                                                        020 MTR00023
+     QQ0001     END OF PROGRAM                                                     021 MTR00024
+00201 TSX +0 07400 4 00001

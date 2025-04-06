@@ -1,0 +1,49 @@
+s709 2.4.3 COMM tty0 (KSR-37) from 127.0.0.1
+
+MIT8C0: 1 USER AT 04/02/25 1818.6, MAX = 30
+READY.                                     
+      
+login guest
+W 1818.7
+Password
+ M1416     5 LOGGED IN  04/02/25 1818.7 FROM 700000
+ LAST LOGOUT WAS  04/02/25 1818.6 FROM 700000      
+ HOME FILE DIRECTORY IS M1416 GUEST          
+                                   
+THIS IS A RECONSTRUCTED CTSS SYSTEM.
+VERSION: 1.0.9                      
+BUILT: 02/13/25 1114.0
+                      
+ CTSS BEING USED IS: MIT8C0
+R .033+.000                
+           
+lisp lib
+W 1818.8
+06978   
+ VALUE
+ NIL  
+ VALUE
+ DEFLIST
+ VALUE  
+ DEFINE
+ VALUE 
+ (APPEND REVERSE SQRT ABS)
+R .016+.066               
+           
+save mylisp
+W 1818.9
+R .000+.066
+           
+r mylisp tpk
+W 1819.0
+ VALUE  
+ (F LIMIT-F TPK)
+ VALUE          
+ ( 0.39988629E3 TOO-BIG TOO-BIG TOO-BIG  0.39960863E3  0.322E3
+  0.13673205E3  0.41414213E2  0.6E1 -0.4E1 TOO-BIG)           
+R .016+.050                                        
+           
+logout
+W 1819.2
+ M1416     5 LOGGED OUT 04/02/25 1819.2 FROM 700000
+ TOTAL TIME USED =    .0 MIN.                      

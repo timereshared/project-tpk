@@ -9,3 +9,4 @@ Lisp 1.5 are available today.
 |-----------------------------------|--------------------------------------|--------------------------------------|--------------------------------------------|
 | [MAD](../../programs/MAD/tpk.mad) | [`mad_compile.txt`](mad_compile.txt) | [`mad_listing.txt`](mad_listing.txt) | [timereshared.com](https://timereshared.com/ctss-mad/) |
 | [Fortran II](<../../programs/Fortran II/tpk.for>) | [`fortran_compile.txt`](fortran_compile.txt) | [`fortran_listing.txt`](fortran_listing.txt) | [timereshared.com](https://timereshared.com/ctss-fortran/) |
+| [Lisp 1.5](<../../programs/Lisp 1.5/tpk.lisp>) | [`lisp_compile.txt`](lisp_compile.txt) | | [timereshared.com](https://timereshared.com/ctss-lisp/) |

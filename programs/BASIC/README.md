@@ -7,7 +7,7 @@ to pick up programming.
 
 [`tpk_dartmouth_1964.bas`](./tpk_dartmouth_1964.bas)
 
-* Runs on [Dartmouth DTSS](../../listings/Dartmouth DTSS/)
+* Runs on [Dartmouth DTSS](<../../listings/Dartmouth DTSS/>)
 * Uses `READ`/`DATA` to fetch input, as `INPUT` was not available on
   the original 1964 version.
 * Written by Rupert Lane

@@ -1,0 +1,56 @@
+ # $list tpk.for
+      
+        1     C     TPK ALGORITH IN FORTRAN 66
+        2           FTPK(X) = SQRT(ABS(X)) + 5.0*X**3
+        3     C     MAIN PROGRAM
+        4           DIMENSION A(11)
+        5           N=11
+        6           WRITE(6, 100)
+        7      100  FORMAT(23HPLEASE ENTER 11 NUMBERS)
+        8           READ(5, 101) A
+        9      101  FORMAT(F9.4)
+       10           WRITE(6, 102)
+       11      102  FORMAT(11HRESULTS ARE)
+       12           DO 3 J = 1, N
+       13           K = N - J + 1
+       14           RESULT = FTPK(A(K))
+       15           IF (RESULT .LE. 400) GOTO 2
+       16      1    PRINT 103
+       17      103  FORMAT(9HTOO LARGE)    
+       18           GOTO 3                            
+       19      2    WRITE(6, 101) RESULT
+       20      3    CONTINUE
+       21           STOP                   
+       22           END
+
+ # $run *ftn scards=tpk.for sprint=-listing spunch=-tpk                          
+ # Execution begins   10:34:26
+   No errors in MAIN
+ # Execution terminated   10:34:27  T=0.011
+ # run -tpk
+ # Execution begins   10:34:39
+   PLEASE ENTER 11 NUMBERS
+   10.
+   -1.
+   1.
+   2.
+   3.
+   4.
+   4.3
+   4.305
+   4.303
+   4.302
+   4.301
+   RESULTS ARE
+   399.8860
+   TOO LARGE
+   TOO LARGE
+   TOO LARGE
+   399.6082
+   322.0000
+   136.7320
+    41.4142
+     6.0000
+    -4.0000
+   TOO LARGE
+ # Execution terminated   10:35:28  T=0.023

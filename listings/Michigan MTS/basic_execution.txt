@@ -1,0 +1,59 @@
+# $run *basic                            
+ # Execution begins   11:41:13
+ : /open TPK                     
+ &  "TPK" has been created.      
+ : /include tpk.bas                    
+ : /list                                                   
+   100 REM TPK ALGORITHM IN BASIC
+   110 REM
+   120 DEF FNT(X) = SQR(ABS(X)) + 5*X**3
+   130 REM
+   140 REM MAIN PROGRAM
+   150 DIM A(11)
+   160 LET N=11
+   170 PRINT "PLEASE ENTER", N, "NUMBERS"
+   180 FOR I = 1 TO N
+   190 INPUT A(I)
+   200 NEXT I
+   210 PRINT "RESULTS ARE"
+   220 FOR J = 1 TO N
+   230 LET K = N - J + 1
+   240 LET R = FNT(A(K))
+   250 IF R > 400 THEN 280
+   260 PRINT R
+   270 GOTO 290                                             
+   280 PRINT "TOO LARGE"                                    
+   290 NEXT J                                         
+   300 END                                         
+ & End-Of-File                                            
+ : /run                                                    
+   PLEASE ENTER    11            NUMBERS
+ ? 10
+ ? -1
+ ? 1
+ ? 2
+ ? 3
+ ? 4
+ ? 4.5
+ ? 4.305
+ ? 4.303
+ ? 4.302
+ ? 4.301
+   RESULTS ARE
+   399.8863
+   TOO LARGE
+   TOO LARGE
+   TOO LARGE
+   TOO LARGE
+   322
+   136.7321
+   41.41421
+   6
+   -4
+   TOO LARGE
+ +  Program Ends
+ : /save
+ & Done
+ : /quit
+ &  Off at 11:42:53 on 10-05-25
+ # Execution terminated   11:42:53  T=0.072

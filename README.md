@@ -48,10 +48,22 @@ sample implementations can be found at [Rosetta Code](https://rosettacode.org/wi
 ## Structure
 
 Under [`programs/`](programs/) you will find implementations of the
-algorithm sorted by programming language.
+algorithm sorted by programming language. Currently we have:
+
+* Algol 60
+* BASIC
+* Fortran II
+* Fortran 66
+* Lisp 1.5
+* MAD
 
 Under [`listings`](listings/) you will find compilation runs and
-output listings, sorted by operating system.
+output listings, sorted by operating system. Currently we have:
+
+* Burroughs MCP
+* Dartmouth DTSS
+* Michigan MTS
+* MIT CTSS
 
 READMEs in each directory provide cross links between the two
 

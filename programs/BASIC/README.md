@@ -10,4 +10,16 @@ to pick up programming.
 * Runs on [Dartmouth DTSS](<../../listings/Dartmouth DTSS/>)
 * Uses `READ`/`DATA` to fetch input, as `INPUT` was not available on
   the original 1964 version.
-* Written by Rupert Lane
+
+[`tpk_4th_ed.bas`](./tpk_4th_ed.bas)
+
+* A generic mainframe BASIC similar to [Dartmouth 4th Edition
+  BASIC](https://bitsavers.org/pdf/dartmouth/dtss/196801_BASIC_4th_Edition.pdf)
+  from 1968.
+* Runs on
+  * [Burroughs MCP](<../../listings/Burroughs MCP/>)
+  * [Michigan MTS](<../../listings/Michigan MTS/>)
+* Uses `INPUT` to ask for numbers.
+
+All code written by Rupert Lane
+

@@ -24,7 +24,4 @@ form followed by specific implementations.
 * Uses `READATA`/`DATA` to fetch input, as `INPUT` was not available on
   the original 1964 version.
   
-All code  written by Rupert Lane.
-
-
-
+All code written by Rupert Lane.

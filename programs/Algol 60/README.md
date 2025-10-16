@@ -24,4 +24,9 @@ form followed by specific implementations.
 * Uses `READATA`/`DATA` to fetch input, as `INPUT` was not available on
   the original 1964 version.
   
+[`tpk_mcp.a60`](./tpk_mcp.a60)
+
+* Runs on [Burroughs MCP](<../../listings/Burroughs MCP/>) Extended  Algol.
+- Uses MCP's `FILE`, `FORMAT`, `READ`/`WRITE` for I.O.
+
 All code written by Rupert Lane.

@@ -8,5 +8,6 @@ BASIC, Algol 60, Fortran and COBOL.
 
 | Language                          | Compile/Run                          | Listing                              | Blog post                                  |
 |-----------------------------------|--------------------------------------|--------------------------------------|--------------------------------------------|
+| [Algol 60](<../../programs/Algol 60/tpk_mcp.a60>) | [`algol_60_execution.txt`](algol_60_execution.txt) | n/a | [timereshared.com](https://timereshared.com/mcp-algol/) |
 | [BASIC](../../programs/BASIC/tpk_4th_ed.bas) | [`basic_execution.txt`](basic_execution.txt) | n/a | [timereshared.com](https://timereshared.com/mcp-fortran-basic/) |
 | [Fortran 66](<../../programs/Fortran 66/tpk_b5500.for>) | [`fortran_66_execution.txt`](fortran_66__execution.txt) | n/a | [timereshared.com](https://timereshared.com/mcp-fortran-basic/) |

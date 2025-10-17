@@ -3,9 +3,9 @@
 The purpose of this repository is to collect
 
 * implementations of TPK, a typical algorithm, in many languages
-  that ran on time-sharing operating systems
+  that ran on time-sharing operating systems.
 * compilation runs and listings for those programs, created by running
-  them on emulated systems
+  them on emulated time-sharing systems.
 
 ## Why?
 
@@ -34,7 +34,7 @@ up with a simple algorithm to do the following:
     read 11 numbers to an array
     for each x in in reverse order of the array
         calculate √|x| + 5x³
-        print that number if ≤ 400, else print TOO BIG
+        print that number if ≤ 400, else print TOO LARGE
 ```
 
 This is not supposed to be a particularly useful task, but in a short
@@ -50,20 +50,20 @@ sample implementations can be found at [Rosetta Code](https://rosettacode.org/wi
 Under [`programs/`](programs/) you will find implementations of the
 algorithm sorted by programming language. Currently we have:
 
-* Algol 60
-* BASIC
-* Fortran II
-* Fortran 66
-* Lisp 1.5
-* MAD
+* [Algol 60](<programs/Algol 60>)
+* [BASIC](<programs/BASIC>)
+* [Fortran II](<programs/Fortran II>)
+* [Fortran 66](<programs/Fortran 66>)
+* [Lisp 1.5](<programs/Lisp 1.5>)
+* [MAD (Michigan Algorithm Decoder)](<programs/MAD>)
 
 Under [`listings`](listings/) you will find compilation runs and
 output listings, sorted by operating system. Currently we have:
 
-* Burroughs MCP
-* Dartmouth DTSS
-* Michigan MTS
-* MIT CTSS
+* [Burroughs MCP](<listings/Burroughs MCP>)
+* [Dartmouth DTSS](<listings/Dartmouth DTSS>)
+* [Michigan MTS](<listings/Michigan MTS>)
+* [MIT CTSS](<listings/CTSS>)
 
 READMEs in each directory provide cross links between the two
 

@@ -1,0 +1,14 @@
+1.000 * TPK algorithm in JOSS (untested)
+1.010 Let tpk(x) = sqrt(|x|) + 5 · x * 3.
+1.020 Type "Please enter 11 numbers".
+1.030 Do part 2 for j=1(1)11.
+1.040 Type "Results are".
+1.050 Do part 3 for j=11(-1)1.
+1.999 Stop.
+
+2.000 * Get each number and store in array
+2.010 Demand a(j).
+
+3.000 * Calculate TPK and display results
+3.010 result = tpk(a(j)).
+3.020 Type (result > 400: "Too large"; result).

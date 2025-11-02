@@ -1,0 +1,13 @@
+1.000 * TPK algorithm in PIL
+1.010 TYPE "Please enter 11 numbers"
+1.020 FOR j = 1 TO 11: DO PART 2
+1.030 TYPE "Results are"
+1.040 FOR j = 11 BY -1 UNTIL j = 0: DO PART 3
+1.999 STOP
+
+2.000 * Get each number and store in array
+2.010 DEMAND a(j)
+
+3.000 * Calculate TPK and display results
+3.010 SET result = the sqrt of |a(j)| + 5 * a(j) ** 3
+3.020 IF result > 400, THEN TYPE "Too large"; ELSE TYPE result

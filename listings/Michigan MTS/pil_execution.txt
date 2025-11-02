@@ -1,0 +1,48 @@
+ # $run *pil
+ # Execution begins   06:43:25
+   PIL/2: Ready                                                                 
+ * load "tpk.pil"
+ & type all parts
+                                
+   1.0    * TPK algorithm in PIL
+   1.01   TYPE "Please enter 11 numbers"
+   1.02   FOR j = 1 TO 11: DO PART 2
+   1.03   TYPE "Results are"
+   1.04   FOR j = 11 BY -1 UNTIL j = 0: DO PART 3
+   1.999  STOP
+                                              
+   2.0    * Get each number and store in array
+   2.01   DEMAND a(j)                                                           
+                                                                                
+   3.0    * Calculate TPK and display results                                   
+   3.01   SET result = the sqrt of |a(j)| + 5 * a(j) ** 3                       
+   3.02   IF result > 400, THEN TYPE "Too large"; ELSE TYPE result              
+                                                                               
+* do part 1
+   Please enter 11 numbers                                                      
+  a(1) = ?_ 10
+  a(2) = ?_ -1
+  a(3) = ?_ 1
+  a(4) = ?_ 2
+  a(5) = ?_ 3
+  a(6) = ?_ 4
+  a(7) = ?_ 4.3
+  a(8) = ?_ 4.305
+  a(9) = ?_ 4.303
+  a(10) = ?_ 4.302
+  a(11) = ?_ 4.301
+   Results are                                                                  
+   result =  399.8863                                                           
+   Too large                                                                    
+   Too large                                                                    
+   Too large                                                                    
+   result =  399.6086                                                           
+   result =  322.0                                                              
+   result =  136.7321                                                           
+   result =  41.41421                                                           
+   result =  6.0                                                                
+   result = -4.0                                                                
+   Too large                                                                    
+   STOP AT STEP 1.999
+ * stop
+ # Execution terminated   06:45:13  T=0.071

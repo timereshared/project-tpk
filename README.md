@@ -55,6 +55,7 @@ algorithm sorted by programming language. Currently we have:
 * [COBOL](<programs/COBOL>)
 * [Fortran II](<programs/Fortran II>)
 * [Fortran 66](<programs/Fortran 66>)
+* [JOSS, FOCAL and clones](<programs/JOSS, FOCAL and clones>)
 * [Lisp 1.5](<programs/Lisp 1.5>)
 * [MAD (Michigan Algorithm Decoder)](<programs/MAD>)
 

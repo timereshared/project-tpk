@@ -18,6 +18,7 @@ to pick up programming.
   from 1968.
 * Runs on
   * [Burroughs MCP](<../../listings/Burroughs MCP/>)
+  * [DEC TOPS-10](<../../listings/DEC TOPS-10/>)
   * [Michigan MTS](<../../listings/Michigan MTS/>)
 * Uses `INPUT` to ask for numbers.
 

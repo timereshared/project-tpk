@@ -11,6 +11,11 @@ handling and more generic I/O.
 * Uses unit 5 for input and 6 for output which was the convention
   followed by IBM and many other implementations.
 
+[`tpk_tops10.for`](./tpk_tops10.for)
+
+* Runs on [DEC TOPS-10](<../../listings/DEC TOPS-10>)
+* As `tpk.for`, but uses unit 5 for both input and output.
+
 [`tpk_mcp.for`](./tpk_mcp.for)
 
 * Runs on [Burroughs MCP](<../../listings/Burroughs MCP/>)

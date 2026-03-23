@@ -63,6 +63,7 @@ Under [`listings`](listings/) you will find compilation runs and
 output listings, sorted by operating system. Currently we have:
 
 * [Burroughs MCP](<listings/Burroughs MCP>)
+* [DEC TOPS-10](<listings/DEC TOPS-10>)
 * [Dartmouth DTSS](<listings/Dartmouth DTSS>)
 * [Michigan MTS](<listings/Michigan MTS>)
 * [MIT CTSS](<listings/CTSS>)

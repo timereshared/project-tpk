@@ -1,0 +1,29 @@
+BEGIN
+    COMMENT TPK ALGORITHM IN ALGOL 60;
+ 
+    REAL PROCEDURE FN(X);
+    VALUE X;
+    REAL X;
+    BEGIN
+	FN := SQRT(ABS(X)) + 5*X^3
+    END PROCEDURE;
+ 
+    COMMENT Main program;
+    INTEGER N, J;
+    REAL ARRAY A[1:11];
+    N := 11;
+    COMMENT Read numbers;
+    FOR J := 1 STEP 1 UNTIL N DO
+	READ(A[J]);
+    WRITE("RESULTS ARE[N]");
+    FOR J := N STEP -1 UNTIL 1 DO
+    BEGIN
+	REAL RESULT;
+	RESULT := FN(A[J]);
+	IF RESULT > 400.0 THEN
+	    WRITE("TOO LARGE")
+	ELSE
+	    PRINT(RESULT);
+	WRITE("[N]");
+    END LOOP;
+END PROGRAM

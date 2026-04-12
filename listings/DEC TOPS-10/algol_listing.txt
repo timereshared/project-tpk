@@ -1,0 +1,47 @@
+DECsystem 10 ALGOL-60, Version 0(0)   04-APR-79    14:05:22
+Command string: tpk,lis=tpk.alg
+ 
+ 
+ 
+ 
+000004	 B1	      1 BEGIN
+000004		      2     COMMENT TPK ALGORITHM IN ALGOL 60;
+000004		      3
+START OF BLOCK 1
+000011		      4     REAL PROCEDURE FN(X);
+000015		      5     VALUE X;
+000015		      6     REAL X;
+000016	 B2	      7     BEGIN
+000016		      8 	FN := SQRT(ABS(X)) + 5*X^3
+000030	      E2      9     END PROCEDURE;
+000030		     10
+000030		     11     COMMENT Main program;
+000031		     12     INTEGER N, J;
+******* 			  ^
+12  NO DECLARATION SHOULD FOLLOW PROCEDURE OR SWITCH DECLARATION
+000033		     13     REAL ARRAY A[1:11];
+000040		     14     N := 11;
+000040		     15     COMMENT Read numbers;
+000044		     16     FOR J := 1 STEP 1 UNTIL N DO
+000055		     17 	READ(A[J]);
+000061		     18     WRITE("RESULTS ARE[N]");
+000066		     19     FOR J := N STEP -1 UNTIL 1 DO
+000072	 B3	     20     BEGIN
+START OF BLOCK 2
+000073		     21 	REAL RESULT;
+000100		     22 	RESULT := FN(A[J]);
+000104		     23 	IF RESULT > 400.0 THEN
+000110		     24 	    WRITE("TOO LARGE")
+000110		     25 	ELSE
+000114		     26 	    PRINT(RESULT);
+000117		     27 	WRITE("[N]");
+000122	      E3     28     END LOOP;
+END BLOCK 2, CONT 1
+000126	      E1     29 END PROGRAM
+END BLOCK 1, CONT 0
+ 
+ 
+ 
+ 
+ 
+No errors

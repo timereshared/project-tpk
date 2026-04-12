@@ -27,6 +27,11 @@ form followed by specific implementations.
 [`tpk_mcp.a60`](./tpk_mcp.a60)
 
 * Runs on [Burroughs MCP](<../../listings/Burroughs MCP/>) Extended  Algol.
-- Uses MCP's `FILE`, `FORMAT`, `READ`/`WRITE` for I.O.
+- Uses MCP's `FILE`, `FORMAT`, `READ`/`WRITE` for I/O
+
+[`tpk_tops_10.alg`](./tpk_tops_10.alg)
+
+* Runs on DEC TOPS-10
+* Uses `WRITE` for string output and `READ`/`PRINT` for number I/O
 
 All code written by Rupert Lane.

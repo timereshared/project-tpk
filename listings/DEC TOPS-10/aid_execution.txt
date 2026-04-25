@@ -1,0 +1,44 @@
+.r aid
+
+
+AID 20A(32) AT YOUR SERVICE ...
+
+*1.000 Let t(x) = sqrt(!x!) + 5 * x ^ 3.
+*1.010 Type "Please enter 11 numbers".
+*1.020 Do part 2 for j=1(1)11.
+*1.030 Type "Results are".
+*1.040 Do part 3 for j=11(-1)1.
+*1.050 Stop.
+*
+*2.000 Demand a(j).
+*
+*3.000 Let r = t(a(j)).
+*3.010 Type "Too large" if r > 400.
+*3.020 Type r if r <= 400.
+*
+*do part 1
+Please enter 11 numbers
+	a(1) = *10
+	a(2) = *-1
+	a(3) = *1
+	a(4) = *2
+	a(5) = *3
+	a(6) = *4
+	a(7) = *4.3
+	a(8) = *4.305
+	a(9) = *4.303
+       a(10) = *4.302
+       a(11) = *4.301
+Results are
+	   r =	    399.8863
+Too large
+Too large
+Too large
+	   r =	    399.608644
+	   r =	    322
+	   r =	    136.732051
+	   r =	     41.4142136
+	   r =	      6
+	   r =	     -4
+Too large
+Stopped by step 1.05.

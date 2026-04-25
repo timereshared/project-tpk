@@ -1,0 +1,12 @@
+1.000 Let t(x) = sqrt(!x!) + 5 * x ^ 3.
+1.010 Type "Please enter 11 numbers".
+1.020 Do part 2 for j=1(1)11.
+1.030 Type "Results are".
+1.040 Do part 3 for j=11(-1)1.
+1.050 Stop.
+
+2.000 Demand a(j).
+
+3.000 Let r = t(a(j)).
+3.010 Type "Too large" if r > 400.
+3.020 Type r if r <= 400.

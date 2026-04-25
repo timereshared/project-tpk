@@ -12,6 +12,15 @@ and with changes to syntax. One popular offshoot was DEC's FOCAL.
 * Has not been tested as there is no known implementation available to
   run today.
 
+[`tpk.aid`](./tpk.aid)
+
+* Written in AID (Algebraic Interpretive Dialogue), DEC's
+  implementation of JOSS for the PDP-6 and -10.
+* Very close to the stand-alone JOSS-II implementation DEC and RAND
+  did for the PDP-6. Minor differences in character set, and no
+  comment support
+* Runs on [TOPS-10](<../../listings/DEC TOPS-10>) on the PDP-10 KA.
+
 [`tpk.wipl`](./tpk.wipl)
 
 * Written in WIPL (Wisconsin Interactive Problem-solving Language)

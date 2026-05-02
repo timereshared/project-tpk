@@ -11,4 +11,5 @@ on how to use TOPS-10.
 | [Algol 60](<../../programs/Algol 60/tpk_tops_10.alg>) | [`algol_compilation.txt`](algol_compilation.txt) | [`algol_listing.txt`](algol_listing.txt) | 
 | [AID](<../../programs/JOSS, FOCAL and clones/tpk.aid>) | [`aid_execution.txt`](aid_execution.txt) | n/a | 
 | [BASIC](../../programs/BASIC/tpk_4th_ed.bas) | [`basic_execution.txt`](basic_execution.txt) | n/a | |
+| [BCPL](../../programs/BCPL/tpk_tops_10_essex.bcp) | [`essex_bcpl_compilation.txt`](./essex_bcpl_compilation.txt) | n/a | 
 | [Fortran 66](<../../programs/Fortran 66/tpk_tops10.for>) | [`fortran_66_compile.txt`](fortran_66_compile.txt) | [`fortran_66_listing.txt`](fortran_66_listing.txt) | 

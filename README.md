@@ -52,6 +52,7 @@ algorithm sorted by programming language. Currently we have:
 
 * [Algol 60](<programs/Algol 60>)
 * [BASIC](<programs/BASIC>)
+* [BCPL](<programs/BCPL>)
 * [COBOL](<programs/COBOL>)
 * [Fortran II](<programs/Fortran II>)
 * [Fortran 66](<programs/Fortran 66>)

@@ -1,0 +1,73 @@
+.type tpk.bcp
+// Include definitions for I/O routines
+GET "BCL:BCPLIB"
+
+// Floating point square root implementation using Babylonian
+// method. X must be >= 0.
+LET SQRT(X) = VALOF
+$(
+    LET X1, X2 = X, X #/ 2.0
+    WHILE #ABS (X1 #- X2) #> 0.0001 DO
+    $(
+	LET OLD = X2
+	X2 := 0.5 #* (X1 #+ (X2 #/ X1))
+	X1 := OLD
+    $)
+    RESULTIS X2
+$)
+
+// TPK formula
+LET TPK(X) = SQRT(#ABS X) #+ 5.0 #* X ** 3
+
+// Define constants
+MANIFEST $( N = 11; IOVS = 300 $)
+
+// Main program
+LET START() BE
+$(
+    LET A = VEC N
+    LET IOVECTOR = VEC IOVS
+    INITIALISEIO(IOVECTOR, IOVS)
+    WRITE(TTY, "Please enter :N numbers*C*L", N)
+    FOR J = 0 TO N-1 DO A!J := RDF(TTY)
+    WRITE(TTY, "Results are*C*L")
+    FOR J = N-1 TO 0 BY -1 DO
+    $(
+	LET R = TPK(A!J)
+	TEST R #> 400.0 THEN
+	    WRITE(TTY, "Too large*C*L")
+	OR
+	    WRITE(TTY, ":F*C*L", R)
+     $)
+$)
+
+.exec tpk.bcp
+BCPL:  TPK	400227/6	41%
+LINK:	Loading
+[LNKXCT BCPL Execution]
+Please enter 11 numbers
+10
+-1
+1
+2
+3
+4
+4.3
+4.305
+4.303
+4.302
+4.301
+Results are
+398.8125
+399.0900
+399.3677
+399.9234
+398.5351
+321.0001
+136.0001
+41.00009
+6.000088
+-3.999912
+Too large
+
+EXIT
